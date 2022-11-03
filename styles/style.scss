@@ -1,0 +1,94 @@
+*{
+    color: #FFF;
+    box-sizing: border-box;
+    font-family: consolas, sans-serif;
+    letter-spacing: 3px;
+}
+button{
+    background-color: #3c3c3c;
+    height: 40px;
+    width: 100px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 600;
+    margin: 8px;
+}
+span.a{
+    color: #9cdcfe;
+}
+span.b{
+    color: #6A9955;
+}
+body{
+    background-color: #1e1e1e;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    header{
+        font-size: 22px;
+    }
+    section.rule{
+        width: 800px;
+        h2{
+            font-size: 28px;
+            color: #dcdcaa;
+        }
+        p{
+            font-size: 20px;
+            line-height: 32px;
+            color: #ce916a;
+        }
+    }
+    section.interaction{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        input{
+            font-size: 18px;
+            color: #1e1e1e;
+            margin: 10px;
+            width: 100px;
+            height: 30px;
+            text-align: center;
+        }
+    }
+    section.output-container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        p.output{
+            margin: 10px;
+            font-size: 24px;
+            span.input{
+                margin-right: 24px;
+                color: #dcdcaa;
+            }
+
+        }
+        p.result{
+            font-weight: 800;
+            font-size: 24px;
+            
+        }
+    }
+}
+
+
+@media screen and (max-width:1000px){
+    body{
+        section.rule{
+            width: 75vw;
+        }
+    }   
+}
+
+@media screen and (max-width:620px){
+    body{
+        section.rule{
+            width: 80vw;
+            p{
+                font-size: 16px;
+            }
+        }
+    }   
+}
