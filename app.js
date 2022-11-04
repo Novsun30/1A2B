@@ -9,7 +9,6 @@ function answerGenerator(){
         }
         answer = answer + random;
     }
-    console.log(`${answer}`);
 }
 
 function checkAnswer(){
